@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografía: Estrategia de Plataforma B2B de Viajes 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+            color: #1e293b;
+        }
+        .card {
+            background-color: white;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.07), 0 4px 6px -4px rgb(0 0 0 / 0.07);
+            border: 1px solid #e2e8f0;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 400px;
+            }
+        }
+        .stat-number {
+            font-weight: 900;
+            font-size: 3.75rem;
+            line-height: 1;
+            color: #004c6d;
+        }
+        .flow-arrow {
+            position: relative;
+            width: 100%;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .flow-arrow::after {
+            content: '▼';
+            font-size: 2rem;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="max-w-5xl mx-auto p-4 sm:p-6 md:p-12">
+
+        <header class="text-center mb-16">
+            <h1 class="text-4xl md:text-5xl font-black text-[#003f5c] tracking-tight">Estrategia B2B de Viajes 2025</h1>
+            <p class="mt-4 text-xl md:text-2xl text-slate-600 max-w-3xl mx-auto">De un simple proveedor a un <span class="font-bold text-[#004c6d]">ecosistema tecnológico indispensable</span> para la agencia de viajes moderna.</p>
+        </header>
+
+        <section id="market-forces" class="mb-20">
+            <h2 class="text-3xl font-bold text-center mb-10">El Punto de Inflexión del Mercado</h2>
+            <p class="text-lg text-slate-600 text-center max-w-3xl mx-auto mb-12">En 2025, las agencias no eligen un proveedor, eligen un socio tecnológico. La lealtad se gana con dos pilares: <span class="font-bold">Máxima Rentabilidad</span> y <span class="font-bold">Máxima Eficiencia</span>. Estas son las cuatro fuerzas que definen el nuevo campo de juego.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card p-6">
+                    <h3 class="text-xl font-bold text-[#004c6d] mb-3">Revolución Tecnológica</h3>
+                    <p class="text-slate-600 mb-4">La IA ya no es un concepto, es una herramienta de productividad. Las plataformas sin IA o acceso a contenido NDC operan con una desventaja medible.</p>
+                    <div class="text-center p-4 bg-slate-50 rounded-lg">
+                        <div class="stat-number">40%</div>
+                        <p class="font-semibold text-slate-700 mt-1">de las tareas operativas pueden ser automatizadas por la IA, liberando al agente para vender.</p>
+                    </div>
+                </div>
+                <div class="card p-6">
+                    <h3 class="text-xl font-bold text-[#004c6d] mb-3">Nueva Economía del Viaje</h3>
+                    <p class="text-slate-600 mb-4">La demanda por "premiumización" y sostenibilidad es una realidad. El inventario debe reflejar esta sofisticación.</p>
+                     <div class="flex items-center gap-4">
+                        <div class="w-1/2 text-center p-4 bg-slate-50 rounded-lg">
+                            <div class="stat-number text-[#346888]">28%</div>
+                            <p class="font-semibold text-slate-700 mt-1">de aumento en reservas de primera clase.</p>
+                        </div>
+                        <div class="w-1/2 text-center p-4 bg-slate-50 rounded-lg">
+                            <div class="stat-number text-[#346888]">80%</div>
+                            <p class="font-semibold text-slate-700 mt-1">de viajeros priorizan opciones sostenibles.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card p-6">
+                    <h3 class="text-xl font-bold text-[#004c6d] mb-3">Experiencia de Usuario (UX)</h3>
+                    <p class="text-slate-600">Los agentes esperan una interfaz intuitiva y rápida, similar a las apps de consumo. Una mala UX crea fricción, fomenta errores y reduce la adopción de la plataforma, impactando directamente en la eficiencia.</p>
+                </div>
+                <div class="card p-6">
+                    <h3 class="text-xl font-bold text-[#004c6d] mb-3">Nuevos Mercados</h3>
+                    <p class="text-slate-600">El "Poder de la Proximidad" (viajes regionales) es tan crucial como el alcance global. Una plataforma debe ofrecer profundidad local y amplitud mundial para ser verdaderamente útil.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="competitors" class="mb-20">
+            <h2 class="text-3xl font-bold text-center mb-10">Benchmarking: 3 Modelos en Pugna</h2>
+            <p class="text-lg text-slate-600 text-center max-w-3xl mx-auto mb-12">Analizamos los tres arquetipos de plataformas. El resultado revela una brecha generacional en tecnología y modelo de negocio, con un impacto directo en la capacidad de una agencia para competir.</p>
+            <div class="card p-6">
+                <div class="chart-container">
+                    <canvas id="competitorRadarChart"></canvas>
+                </div>
+            </div>
+        </section>
+        
+        <section id="strategy" class="mb-20">
+            <h2 class="text-3xl font-bold text-center mb-10">La Tesis Ganadora: Ser el Orquestador</h2>
+            <p class="text-lg text-slate-600 text-center max-w-3xl mx-auto mb-12">La estrategia superior no es competir, es dominar el ecosistema. El futuro pertenece a la plataforma que actúa como el <span class="font-bold">"Sistema Operativo"</span> del agente, dándole acceso inteligente a todos los modelos de negocio.</p>
+
+            <div class="card p-8">
+                 <div class="text-center">
+                    <div class="inline-block bg-[#003f5c] text-white font-bold py-3 px-6 rounded-lg shadow-lg">Nuestra Plataforma B2B</div>
+                    <p class="mt-2 text-slate-600 font-semibold">(El Agente en el Centro)</p>
+                </div>
+                
+                <div class="flow-arrow"></div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                    <div class="bg-slate-50 border-2 border-dashed border-slate-300 rounded-lg p-6">
+                        <h4 class="font-bold text-lg text-[#004c6d]">Integra Mayoristas Locales</h4>
+                        <p class="text-slate-600 mt-2">Para producto de nicho, charters y demanda regional que los sistemas globales no cubren.</p>
+                    </div>
+                     <div class="bg-slate-50 border-2 border-dashed border-slate-300 rounded-lg p-6">
+                        <h4 class="font-bold text-lg text-[#346888]">Integra Agregadores Globales</h4>
+                        <p class="text-slate-600 mt-2">Para competitividad en precio, eficiencia operativa y seguridad transaccional a escala mundial.</p>
+                    </div>
+                     <div class="bg-slate-50 border-2 border-dashed border-slate-300 rounded-lg p-6">
+                        <h4 class="font-bold text-lg text-[#5886a5]">Integra Afiliados Globales</h4>
+                        <p class="text-slate-600 mt-2">Para máxima rentabilidad, acceso a tarifas de paquete y el más vasto inventario de ocio.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="impact" class="mb-20">
+            <h2 class="text-3xl font-bold text-center mb-10">El Impacto Medible en la Agencia</h2>
+            <p class="text-lg text-slate-600 text-center max-w-3xl mx-auto mb-12">Adoptar un modelo de "Orquestador" no es un cambio cosmético. Transforma las dos métricas más importantes para una agencia: la eficiencia de su equipo y su capacidad para generar ingresos.</p>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="card p-6">
+                    <h3 class="text-xl font-bold text-center mb-4">Revolución de la Eficiencia</h3>
+                    <div class="chart-container h-[300px] md:h-[350px]">
+                        <canvas id="efficiencyChart"></canvas>
+                    </div>
+                    <p class="text-center mt-4 text-slate-600">Se reasigna el tiempo del agente de tareas operativas de bajo valor (búsqueda, comparación) a actividades de alto valor (venta, consultoría).</p>
+                </div>
+                <div class="card p-6">
+                    <h3 class="text-xl font-bold text-center mb-4">Expansión de la Rentabilidad</h3>
+                    <div class="chart-container h-[300px] md:h-[350px]">
+                        <canvas id="profitabilityChart"></canvas>
+                    </div>
+                     <p class="text-center mt-4 text-slate-600">Se diversifican y amplían las fuentes de ingreso, pasando de un simple markup a un modelo multifacético de ganancias.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center border-t pt-10">
+            <h2 class="text-3xl font-bold text-[#003f5c]">Nuestra Oportunidad Estratégica</h2>
+            <p class="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">No ganamos construyendo muros más altos alrededor de nuestro inventario. Ganamos construyendo los <span class="font-bold">puentes más inteligentes</span> hacia todo el inventario del mercado. Al posicionarnos como el orquestador tecnológico, nos volvemos indispensables.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        const tooltipConfig = {
+            plugins: {
+                tooltip: {
+                    callbacks: {
+                        title: function(tooltipItems) {
+                            const item = tooltipItems[0];
+                            let label = item.chart.data.labels[item.dataIndex];
+                            if (Array.isArray(label)) {
+                              return label.join(' ');
+                            }
+                            return label;
+                        }
+                    }
+                }
+            }
+        };
+
+        const processLabel = (label) => {
+            if (label.length > 16) {
+                const words = label.split(' ');
+                const lines = [];
+                let currentLine = '';
+                for (const word of words) {
+                    if ((currentLine + word).length > 16) {
+                        lines.push(currentLine.trim());
+                        currentLine = '';
+                    }
+                    currentLine += word + ' ';
+                }
+                lines.push(currentLine.trim());
+                return lines;
+            }
+            return label;
+        };
+
+        const radarChartCtx = document.getElementById('competitorRadarChart');
+        new Chart(radarChartCtx, {
+            type: 'radar',
+            data: {
+                labels: ['Tecnología (IA/NDC)', 'Rentabilidad Agente', 'Amplitud Inventario', 'Experiencia de Usuario (UX)', 'Flexibilidad'],
+                datasets: [{
+                    label: 'Mayorista Local',
+                    data: [2, 3, 4, 3, 2],
+                    backgroundColor: 'rgba(88, 134, 165, 0.2)',
+                    borderColor: 'rgb(88, 134, 165)',
+                    pointBackgroundColor: 'rgb(88, 134, 165)',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: 'rgb(88, 134, 165)'
+                }, {
+                    label: 'Plataforma Global (Agregador/Afiliado)',
+                    data: [9, 9, 9, 8, 8],
+                    backgroundColor: 'rgba(0, 76, 109, 0.2)',
+                    borderColor: 'rgb(0, 76, 109)',
+                    pointBackgroundColor: 'rgb(0, 76, 109)',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: 'rgb(0, 76, 109)'
+                }]
+            },
+            options: {
+                maintainAspectRatio: false,
+                scales: {
+                    r: {
+                        angleLines: { color: '#e2e8f0' },
+                        grid: { color: '#e2e8f0' },
+                        pointLabels: { font: { size: 14 } },
+                        ticks: {
+                            backdropColor: '#f0f4f8',
+                            stepSize: 2
+                        },
+                        suggestedMin: 0,
+                        suggestedMax: 10
+                    }
+                },
+                plugins: tooltipConfig.plugins
+            }
+        });
+
+        const efficiencyChartCtx = document.getElementById('efficiencyChart');
+        new Chart(efficiencyChartCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Plataforma Tradicional', 'Plataforma Orquestador'],
+                datasets: [{
+                    label: 'Búsqueda y Comparación',
+                    data: [65, 20],
+                    backgroundColor: '#5886a5',
+                }, {
+                    label: 'Tareas Administrativas',
+                    data: [15, 10],
+                    backgroundColor: '#7aa6c2',
+                }, {
+                    label: 'Venta y Consultoría',
+                    data: [20, 70],
+                    backgroundColor: '#004c6d',
+                }]
+            },
+            options: {
+                maintainAspectRatio: false,
+                indexAxis: 'y',
+                scales: {
+                    x: {
+                        stacked: true,
+                        ticks: {
+                            callback: function(value) { return value + "%" }
+                        }
+                    },
+                    y: {
+                        stacked: true
+                    }
+                },
+                plugins: {
+                    ...tooltipConfig.plugins,
+                    tooltip: {
+                        ...tooltipConfig.plugins.tooltip,
+                        callbacks: {
+                            ...tooltipConfig.plugins.tooltip.callbacks,
+                            label: function(context) {
+                                let label = context.dataset.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                if (context.parsed.x !== null) {
+                                    label += context.parsed.x + '%';
+                                }
+                                return label;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        const profitabilityChartCtx = document.getElementById('profitabilityChart');
+        new Chart(profitabilityChartCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Mayorista Local', processLabel('Agregador Global'), processLabel('Afiliado Global')],
+                datasets: [{
+                    label: 'Markup / Comisión Base',
+                    data: [8, 7, 6],
+                    backgroundColor: '#5886a5',
+                }, {
+                    label: 'Incentivos / Recompensas',
+                    data: [0, 2, 3],
+                    backgroundColor: '#346888',
+                }, {
+                    label: 'Cargo por Servicio Propio',
+                    data: [0, 0, 10],
+                    backgroundColor: '#004c6d',
+                }]
+            },
+            options: {
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            callback: function(value) { return value + "%" }
+                        },
+                        title: {
+                            display: true,
+                            text: 'Potencial de Ganancia (%)'
+                        }
+                    }
+                },
+                plugins: {
+                    ...tooltipConfig.plugins,
+                    tooltip: {
+                        ...tooltipConfig.plugins.tooltip,
+                        callbacks: {
+                            ...tooltipConfig.plugins.tooltip.callbacks,
+                             label: function(context) {
+                                let label = context.dataset.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                if (context.parsed.y !== null) {
+                                    label += context.parsed.y + '%';
+                                }
+                                return label;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
